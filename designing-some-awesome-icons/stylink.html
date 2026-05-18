@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>styling svg</title>
+
+    <style>
+        .avatar-container {
+            fill: none;
+            stroke: blueviolet;
+            stroke-width: 2px;
+        }
+
+        .avatar-head {
+            fill: grey;
+            stroke: black;
+            stroke-width: 0.5px;
+        }
+
+        .avatar-body {
+            fill: gray;
+            stroke: black;
+            stroke-width: 0.5px;
+        }
+
+     </style>
+</head>
+<body>
+    <h1>Styling SVG</h1>
+
+    <svg viewBox="0 0 200 200" height="200">
+
+            <rect class="avatar-container" x="20" y="20"
+            height="160" width="160" rx="10"/>
+             <circle class="avatar-head" cx="100" cy="70" r="35"/>
+             <rect class="avatar-body" x="40" y="105" width="120" height="60" rx="10"/>
+    </svg>
+
+</body>
+</html>
