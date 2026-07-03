@@ -1,18 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home Icons</title>
+    
+    <title>home</title>
+
+    <style>
+        .avatar-container {
+            fill: none;
+            stroke: blueviolet;
+            stroke-width: 2px;
+        }
+
+        .avatar-head {
+            fill: grey;
+            stroke: black;
+            stroke-width: 0.5px;
+        }
+
+        .avatar-body {
+            fill: gray;
+            stroke: black;
+            stroke-width: 0.5px;
+        }
+
+     </style>
 </head>
 <body>
-    <svg viewBox="0 0 120 120" width="120" aria-label="Up home icon">
-        <line x1="60" y1="120" x2="60" y2="34" class="icon-stroke home" />
-  <polyline points="40,54 60,32 80,54" class="icon-stroke home" />
-  <rect x="30" y="70" width="64" height="30" rx="5" class="download-bar" />
+    <h1>Styling SVG</h1>
+
+    <svg viewBox="0 0 200 200" height="200">
+
+            <rect class="avatar-container" x="20" y="20"
+            height="160" width="160" rx="10"/>
+            <rect class="avatar-body" x="40" y="105" width="120" height="70" rx="10"/>
+
+            <svg viewBox="0 0 120 120" width="120" aria-label="Up arrow icon">
+  <line x1="60" y1="88" x2="60" y2="34" class="icon-stroke icon-arrow" />
+  <polyline points="40,54 60,32 80,54" class="icon-stroke icon-arrow" />
+</svg>
 
 
+                     
     </svg>
-    
+
 </body>
 </html>
