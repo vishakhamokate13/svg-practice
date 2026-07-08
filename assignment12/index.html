@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keyframe Animations</title>
+    <style>
+        .my-box{
+            fill:brown;
+            animation: color-magic 5s infinite alternate ease-in-out;
+        }
+
+        @keyframes color-magic {
+            0% {
+                fill: #659287;
+            }
+            25%{
+                fill: #88BDA4;
+            }
+            50%{
+                fill: #B1D3B9;
+            }
+            75%{
+                fill: #E6F2DD;
+            }
+            100%{
+                fill: #c9fcef;
+            }
+
+        }
+
+    </style>
+</head>
+<body>
+    <svg viewBox="0 0 100 100" height="100" width="100">
+        <rect x="20" y="20" width="30" height="30" rx="30"
+        class="my-box"/>
+
+    </svg>
+    
+</body>
+</html>
