@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animating Icons</title>
+
+    <style>
+        .star{
+            fill: gold;
+            stroke: orange;
+            stroke-width: 2;
+            stroke-linejoin: round;
+            transition: 
+            fill 5s ease-out,
+            stroke 5s ease-out,
+            opacity 5s ease-out;
+        }
+        .star:hover{
+            fill: orange;
+            stroke: gold;
+            opacity: 0.8;
+        }
+
+    </style>
+</head>
+<body>
+
+    <svg>
+        <polygon points="60,18,70,44,98,44,76,61,84,90,60,72,36,90,44,61,22,44,50,44"
+        class="star">
+            
+    </svg>
+    
+</body>
+</html>
