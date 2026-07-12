@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cubic Bezier Curve</title>
+    <style>
+        .star{
+            fill: gold;
+            stroke: orange;
+            stroke-width: 2;
+            stroke-linejoin: round;
+            transition: 
+            fill 5s cubic-bezier(0.25, 0.1, 0.25, 1),
+        }
+        .star:hover{
+            fill: orange;
+            transform:rotate(30deg);
+            transform-origin: center;
+        }
+        .circle{
+            fill: tomato;
+            transition: 
+            fill 5s cubic-bezier(.68,-0.55,.27,1.55),
+        }
+        .circle:hover{
+            fill: #87CEEB;
+            transform:translateY(40px);
+            transform-origin: center;
+        }
+    </style>
+</head>
+<body>
+    <svg viewBox="0 0 450 250">
+        <polygon points="60,18,70,44,98,44,76,61,84,90
+        ,60,72,36,90,44,61,22,44,50,44"
+        class="star"/>
+
+        <circle class="circle"
+        cx="80"
+        cy="150"
+        r="40" />
+            
+    </svg>
+</body>
+</html>
