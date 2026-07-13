@@ -5,17 +5,46 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Bouncing Ball Animation</title>
     <style>
-        .ball{
-            fill: blue;
+        .box{
+            fill: brown;
+            transform-origin: right;
+            animation: moveBox 0.5s infinite alternate ease-in-out;
         }
+        .move{
+            fill: gray;
+            animation: pulse 0.5s infinite ease-in-out;
+            transform-origin: right;
+        }
+
+        @keyframes moveBox{
+        100%,    
+        0%{
+            transform: translateY(1px) rotate(1deg);
+            fill: royalblue;
+        }
+
+        50%{
+            transform: translateY(50px) rotate(50deg);
+            fill: orange;
+        }
+    }
+        
+        @keyframes pulse {
+            100%, 
+            0% { 
+                transform: scale(1); 
+            }
+            50% { 
+                transform: scale(5.0);
+             }
+            }
     </style>
 </head>
 <body>
-    <svg viewBox="0 0 200 200"width="200"height="200">
-        <circle cx="100" cy="100" r="20" class="ball"/>
-    </svg>
+    <svg viewBox="0 0 200 200"width="200 "height="200">
+    <rect x="40" y="70" width="50" height="50" class="box"/>
+          <ellipse cx="65" cy="125" rx="25" ry="5" class="move"/>
 
-    
-    
+</svg>
 </body>
 </html>
